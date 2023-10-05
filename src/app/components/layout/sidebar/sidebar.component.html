@@ -1,0 +1,19 @@
+<div class="layer" [ngClass]="showHide">
+    <nav>
+        <div class="circle"></div>
+        <div class="close-menu" (click)="closeMenu()">
+            <img src="assets/img/icons/menu.svg" draggable="false" />
+        </div>
+        <div class="menu-options">
+            <div class="option" [routerLink]="['/']" (click)="logout()">
+                <div #signOff class="option-tree" (click)="showTree(signOff)">
+                    <div>
+                        <img src="assets/img/icons/logout.svg" alt="activities">
+                        <span>Cerrar Sesión</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="layer-close" (click)="closeMenu()"></div>
+</div>

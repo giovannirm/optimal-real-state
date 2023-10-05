@@ -1,0 +1,14 @@
+<header>
+    <div class="wrap-header">
+        <div class="logo">
+            <img src="assets/img/optima/logo.jpg" draggable="false" alt="Optima Inmobiliaria">
+            <span class="logo-name">
+                {{ 'Optima Inmobiliaria' | uppercase }}
+            </span>
+        </div>
+        <div class="menu" (click)="toggleMenu()">
+            <img src="assets/img/icons/menu.svg" draggable="false"/>
+        </div>
+    </div>
+    <app-sidebar></app-sidebar>
+</header>
